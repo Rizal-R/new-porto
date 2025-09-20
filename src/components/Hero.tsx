@@ -25,7 +25,7 @@ export default function Hero() {
         <div>
           <h1 className="text-3xl font-extrabold leading-tight ">
             Hi, I'm <span className="text-neon-pink">Rizal Rudiantoro</span>
-            <div className="text-neon-green">Software Engineer</div> with 5+
+            <div className="text-neon-blue">Software Engineer</div> with 5+
             Years of Experience.
           </h1>
 
