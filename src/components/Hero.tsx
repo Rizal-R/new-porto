@@ -39,6 +39,9 @@ export default function Hero() {
             <span className="font-semibold text-white">futuristic</span> web
             applications using modern frameworks and cutting-edge technologies.
           </p>
+          <p className="mt-5">
+            Over 5 years of experience building scalable, high-performance applications from frontend to backend. Skilled in modern frameworks, databases, and cloud deployment.
+          </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
             <a
