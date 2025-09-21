@@ -44,7 +44,13 @@ export default function Hero() {
             applications from frontend to backend. Skilled in modern frameworks,
             databases, and cloud deployment.
           </p>
-
+           <div className="flex justify-center sm:hidden">
+            <div className="w-1/2 mt-10 rounded-full shadow-black shadow-md block">
+              <div className="text-center text-slate-400">
+                <img className="rounded-full" src={profile} />
+              </div>
+            </div>
+          </div>
           <div className="mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
             <a className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-black border border-neon-blue text-neon-blue shadow-[0_0_15px_#00f0ff] hover:shadow-[0_0_10px_#00f0ff] transition-transform hover:-translate-y-1">
               <a
@@ -64,14 +70,7 @@ export default function Hero() {
               Contact Me
             </a> */}
           </div>
-          <div className="flex justify-center sm:hidden">
-            <div className="w-1/2 mt-10 rounded-full shadow-black shadow-xl">
-              <div className="text-center text-slate-400">
-                <img className="rounded-full" src={profile} />
-              </div>
-            </div>
-            <div className="absolute -right-8 -bottom-8 w-36 h-36 rounded-full bg-gradient-to-br from-neon-blue/30 to-neon-pink/20 blur-3xl opacity-60"></div>
-          </div>
+         
 
           {/* Education & Location */}
           <div className="mt-8 grid grid-cols-3 gap-3 max-w-sm">
@@ -158,7 +157,7 @@ export default function Hero() {
           <div className="w-full h-full">
             <div className="text-center text-slate-400">
               <img
-                className="rounded-full shadow-black shadow-lg"
+                className="rounded-full shadow-black shadow-lg block"
                 src={profile}
               />
             </div>
