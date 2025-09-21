@@ -15,7 +15,7 @@ import {
   SiExpress,
   SiFigma,
 } from "react-icons/si";
-import profile from "../assets/img.png";
+import profile from "../assets/img.jpg";
 
 export default function Hero() {
   return (
