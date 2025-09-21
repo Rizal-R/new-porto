@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-10 items-center">
         {/* Text Section */}
         <div>
-          <h1 className="text-3xl font-extrabold leading-tight ">
+          <h1 className="text-2xl sm:text-3xl font-extrabold leading-tight ">
             Hi, I'm <span className="text-neon-pink">Rizal Rudiantoro</span>
             <div className="text-neon-blue">Software Engineer</div> with 5+
             Years of Experience.
@@ -40,14 +40,13 @@ export default function Hero() {
             applications using modern frameworks and cutting-edge technologies.
           </p>
           <p className="mt-5">
-            Over 5 years of experience building scalable, high-performance applications from frontend to backend. Skilled in modern frameworks, databases, and cloud deployment.
+            Over 5 years of experience building scalable, high-performance
+            applications from frontend to backend. Skilled in modern frameworks,
+            databases, and cloud deployment.
           </p>
 
-          <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href="#projects"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-black border border-neon-blue text-neon-blue shadow-[0_0_15px_#00f0ff] hover:shadow-[0_0_10px_#00f0ff] transition-transform hover:-translate-y-1"
-            >
+          <div className="mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
+            <a className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-black border border-neon-blue text-neon-blue shadow-[0_0_15px_#00f0ff] hover:shadow-[0_0_10px_#00f0ff] transition-transform hover:-translate-y-1">
               <a
                 href="https://www.linkedin.com/in/rizal-rudiantoro-27595b141/"
                 className="flex items-center justify-center"
@@ -64,6 +63,14 @@ export default function Hero() {
             >
               Contact Me
             </a> */}
+          </div>
+          <div className="flex justify-center sm:hidden">
+            <div className="w-1/2 mt-10 rounded-full shadow-black shadow-xl">
+              <div className="text-center text-slate-400">
+                <img className="rounded-full" src={profile} />
+              </div>
+            </div>
+            <div className="absolute -right-8 -bottom-8 w-36 h-36 rounded-full bg-gradient-to-br from-neon-blue/30 to-neon-pink/20 blur-3xl opacity-60"></div>
           </div>
 
           {/* Education & Location */}
@@ -147,10 +154,13 @@ export default function Hero() {
         </div>
 
         {/* Illustration / Image */}
-        <div className="relative">
-          <div className="w-full h-full rounded-2xl shadow-[0_0_10px_#00f0ff] hover:shadow-[0_0_20px_#00f0ff] transition-transform hover:-translate-y-1">
+        <div className="relative hidden sm:block">
+          <div className="w-full h-full">
             <div className="text-center text-slate-400">
-              <img className="rounded-xl" src={profile} />
+              <img
+                className="rounded-full shadow-black shadow-lg"
+                src={profile}
+              />
             </div>
           </div>
           <div className="absolute -right-8 -bottom-8 w-36 h-36 rounded-full bg-gradient-to-br from-neon-blue/30 to-neon-pink/20 blur-3xl opacity-60"></div>
